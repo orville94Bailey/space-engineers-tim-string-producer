@@ -1,0 +1,11 @@
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\bin\Debug\netcoreapp2.1\tim string producer.deps.json
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\bin\Debug\netcoreapp2.1\tim string producer.runtimeconfig.json
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\bin\Debug\netcoreapp2.1\tim string producer.runtimeconfig.dev.json
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\bin\Debug\netcoreapp2.1\tim string producer.dll
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\obj\Debug\netcoreapp2.1\tim string producer.csprojAssemblyReference.cache
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\obj\Debug\netcoreapp2.1\tim string producer.csproj.CoreCompileInputs.cache
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\obj\Debug\netcoreapp2.1\tim string producer.AssemblyInfoInputs.cache
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\obj\Debug\netcoreapp2.1\tim string producer.AssemblyInfo.cs
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\bin\Debug\netcoreapp2.1\tim string producer.pdb
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\obj\Debug\netcoreapp2.1\tim string producer.dll
+C:\Users\Jeremy\source\repos\tim string producer\tim string producer\obj\Debug\netcoreapp2.1\tim string producer.pdb
