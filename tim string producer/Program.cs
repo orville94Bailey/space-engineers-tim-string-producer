@@ -24,7 +24,7 @@ namespace tim_string_producer
                 foreach (var component in BlockToComponentDict[block.Key].Children<JProperty>())
                 {
                     //Console.WriteLine(component.Name + " " + component.Value);
-                    UpsertIntoDictionary(partsDictionary, component.Name, component.Value);
+                    UpsertIntoDictionary(partsDictionary, component.Name, component.Value, block.Value);
                 }
             }
 
@@ -36,21 +36,21 @@ namespace tim_string_producer
             Console.ReadLine();
         }
 
-        static void UpsertIntoDictionary(Dictionary<string, int> dict, string key, JToken value)
+        static void UpsertIntoDictionary(Dictionary<string, int> dict, string key, JToken value, JToken multiplier)
         {
             if (dict.ContainsKey(key))
             {
-                dict[key] += value.Value<int>();
+                dict[key] += (value.Value<int>() * multiplier.Value<int>());
             }
             else
             {
-                dict.Add(key, value.Value<int>());
+                dict.Add(key, (value.Value<int>() * multiplier.Value<int>()));
             }
         }
 
         static void RegisterParts(Dictionary<string,JObject> dict)
         {
-            dict.Add("piston", JObject.Parse(@"{'Computer':2,'Motor':4,'LargeTube':4,'Construction':10,'SteelPlate':15}"));
+            dict.Add("piston", JObject.Parse(@"{'Computer':2,'Motor':4,'LargeTube':12,'Construction':10,'SteelPlate':25}"));
             dict.Add("drill", JObject.Parse(@"{'Computer':5,'Motor':5,'LargeTube':12,'Construction':40,'SteelPlate':300}"));
             dict.Add("battery", JObject.Parse(@"{'Computer':25,'PowerCell':80,'Construction':30,'SteelPlate':80}"));
             dict.Add("programmableBlock", JObject.Parse(@"{'Computer':2,'Display':1,'Motor':1,'LargeTube':2,'Construction':4,'SteelPlate':21}"));
